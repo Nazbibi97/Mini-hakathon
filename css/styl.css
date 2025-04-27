@@ -1,0 +1,17 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        input:focus, button:focus {
+            outline: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+        }
+        select {
+            appearance: none;
+        }

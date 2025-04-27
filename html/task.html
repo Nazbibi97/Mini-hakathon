@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="../css/task.css">
+    <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- To Do Column -->
+        <div id="todo-column" class="column">
+            <h2>To Do</h2>
+            <div id="todo-tasks">
+                <!-- Task cards will appear here -->
+            </div>
+            <button id="create-task-btn">Create Task</button>
+        </div>
+
+        <!-- In Progress Column -->
+        <div id="in-progress-column" class="column">
+            <h2>In Progress</h2>
+            <div id="in-progress-tasks">
+                <!-- Task cards will appear here -->
+            </div>
+        </div>
+
+        <!-- Done Column -->
+        <div id="done-column" class="column">
+            <h2>Done</h2>
+            <div id="done-tasks">
+                <!-- Task cards will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Task Creation Modal -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <h2>Create Task</h2>
+            <input type="text" id="task-title" placeholder="Task Title" required />
+            <textarea id="task-description" placeholder="Task Description"></textarea>
+            <input type="text" id="task-assigned" placeholder="Assigned To"/>
+            <button id="save-task-btn">Save Task</button>
+            <button id="close-modal-btn">Close</button>
+        </div>
+    </div>
+    <scrip src="./js/task.js"></script>
+</body>
+</html>
